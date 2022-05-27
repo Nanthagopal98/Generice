@@ -7,36 +7,36 @@ using System.Threading.Tasks;
 
     internal class generics
     {
-        public static void toPrint(int[] intArrayList)
+        public static void toPrint<T>(T[] inputArray)
         {
-            foreach(int element in intArrayList)
+            foreach(T element in inputArray)
             {
                 Console.WriteLine(element);
             }
         }
-        public static void toPrint(double[] doubleArrayList)
+        /*public static void toPrint(double[] inputArray)
         {
-            foreach(double element in doubleArrayList)
+            foreach(double element in inputArray)
             {
                 Console.WriteLine(element);
             }
         }
-        public static void toPrint(char[] charArrayList)
+        public static void toPrint(char[] inputArray)
         {
-            foreach(char element in charArrayList)
+            foreach(char element in inputArray)
             {
                 Console.WriteLine(element);
             }
-        }
+        }*/
     static void Main(string[] args)
     {
         int[] intArrayList = { 1,2,3,4,5};
         double[] doubleArrayList = { 1.1,2.2,3.3,4.4,5.5};
         char[] charArrayList = { 'A', 'B', 'C', 'D', 'E' };
 
-        generics.toPrint(intArrayList);
-        generics.toPrint(doubleArrayList);
-        generics.toPrint(charArrayList);
+        generics.toPrint<int>(intArrayList);
+        generics.toPrint<double>(doubleArrayList);
+        generics.toPrint<char>(charArrayList);
     }
 }
 
