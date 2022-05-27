@@ -5,11 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-    internal class generics
+    public class generics<T>
     {
-        public static void toPrint<T>(T[] inputArray)
+    public  T[] arraylist;
+    public generics(T[] arraylist)
+    {
+        this.arraylist = arraylist;
+    }
+        public void toPrint()
         {
-            foreach(T element in inputArray)
+            foreach(var element in arraylist)
             {
                 Console.WriteLine(element);
             }
@@ -28,16 +33,7 @@ using System.Threading.Tasks;
                 Console.WriteLine(element);
             }
         }*/
-    static void Main(string[] args)
-    {
-        int[] intArrayList = { 1,2,3,4,5};
-        double[] doubleArrayList = { 1.1,2.2,3.3,4.4,5.5};
-        char[] charArrayList = { 'A', 'B', 'C', 'D', 'E' };
-
-        generics.toPrint<int>(intArrayList);
-        generics.toPrint<double>(doubleArrayList);
-        generics.toPrint<char>(charArrayList);
-    }
+ 
 }
 
 
