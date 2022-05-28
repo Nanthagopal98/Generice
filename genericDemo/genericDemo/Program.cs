@@ -14,5 +14,6 @@ using System.Threading.Tasks;
         findMaximumValue findMaximumValue = new findMaximumValue();
         findMaximumValue.findMaxInt(30, 20, 10);
         findMaximumValue.findMaxFloat(10.5F, 20.5F, 30.5F);
+        findMaximumValue.findMaxString("Apple", "Banana", "Orange");
     }
     }
