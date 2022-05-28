@@ -7,7 +7,7 @@ namespace findMaximum.test
         {
             int A = 30, B = 20, C = 10;
             findMaximumValue findMaximumValue = new findMaximumValue();
-            int finalResult = findMaximumValue.findMaxInt(A, B, C);
+            int finalResult = findMaximumValue.findMax(A, B, C);
             Assert.AreEqual(A, finalResult);
         }
         [Test]
@@ -15,7 +15,7 @@ namespace findMaximum.test
         {
             int A = 10, B = 30, C = 20;
             findMaximumValue findMaximumValue = new findMaximumValue();
-            int finalResult = findMaximumValue.findMaxInt(A, B, C);
+            int finalResult = findMaximumValue.findMax(A, B, C);
             Assert.AreEqual(B, finalResult);
         }
         [Test]
@@ -23,7 +23,7 @@ namespace findMaximum.test
         {
             int A = 10, B = 20, C = 30;
             findMaximumValue findMaximumValue = new findMaximumValue();
-            int finalResult = findMaximumValue.findMaxInt(A, B, C);
+            int finalResult = findMaximumValue.findMax(A, B, C);
             Assert.AreEqual(C, finalResult);
         }
     }
@@ -34,7 +34,7 @@ namespace findMaximum.test
         {
             float A = 30.5F, B = 20.5F, C = 10.5F;
             findMaximumValue findMaximumValue = new findMaximumValue();
-            float finalResult = findMaximumValue.findMaxFloat(A, B, C);
+            float finalResult = findMaximumValue.findMax(A, B, C);
             Assert.AreEqual(A, finalResult);
         }
         [Test]
@@ -42,7 +42,7 @@ namespace findMaximum.test
         {
             float A = 10.5F, B = 30.5F, C = 20.5F;
             findMaximumValue findMaximumValue = new findMaximumValue();
-            float finalResult = findMaximumValue.findMaxFloat(A, B, C);
+            float finalResult = findMaximumValue.findMax(A, B, C);
             Assert.AreEqual(B, finalResult);
         }
         [Test]
@@ -50,7 +50,7 @@ namespace findMaximum.test
         {
             float A = 10.5F, B = 20.5F, C = 30.5F;
             findMaximumValue findMaximumValue = new findMaximumValue();
-            float finalResult = findMaximumValue.findMaxFloat(A, B, C);
+            float finalResult = findMaximumValue.findMax(A, B, C);
             Assert.AreEqual(C, finalResult);
         }
     }
@@ -61,7 +61,7 @@ namespace findMaximum.test
         {
             string A = "Orange", B = "Banana", C = "Apple";
             findMaximumValue findMaximumValue = new findMaximumValue();
-            string finalResult = findMaximumValue.findMaxString(A, B, C);
+            string finalResult = findMaximumValue.findMax(A, B, C);
             Assert.AreEqual(A, finalResult);
         }
         [Test]
@@ -69,7 +69,7 @@ namespace findMaximum.test
         {
             string A = "Banana", B = "Orange", C = "Apple";
             findMaximumValue findMaximumValue = new findMaximumValue();
-            string finalResult = findMaximumValue.findMaxString(A, B, C);
+            string finalResult = findMaximumValue.findMax(A, B, C);
             Assert.AreEqual(B, finalResult);
         }
         [Test]
@@ -77,7 +77,7 @@ namespace findMaximum.test
         {
             string A = "Banana", B = "Apple", C = "Orange";
             findMaximumValue findMaximumValue = new findMaximumValue();
-            string finalResult = findMaximumValue.findMaxString(A, B, C);
+            string finalResult = findMaximumValue.findMax(A, B, C);
             Assert.AreEqual(C, finalResult);
         }
     }
