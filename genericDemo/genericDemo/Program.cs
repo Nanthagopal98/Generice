@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
     public class Program
     {
-        public static void Main(string[] args)
-        {
+    public static void Main(string[] args)
+    {
         var log = NLog.LogManager.GetCurrentClassLogger();
         log.Info("Find Maximum started");
-        findMaximumValue findMaximumValue = new findMaximumValue();
-        findMaximumValue.findMax<int>(30, 20, 10);
-        findMaximumValue.findMax<float>(10.5F, 20.5F, 30.5F);
-        findMaximumValue.findMax<string>("Apple", "Banana", "Orange");
+        findMaximumValue<int> findMaximumValue;
+        new findMaximumValue<int>(10, 20, 30).findMax();
+        new findMaximumValue<float>(10.5F, 20.5F, 30.5F).findMax();
+        new findMaximumValue<string>("Apple", "Banana", "Orange").findMax();
     }
+    
     }
