@@ -7,24 +7,41 @@ using System.Threading.Tasks;
 
 public class findMaximumValue
 {
-    public int findMax(int firstValue, int secondValue, int thirdValue)
+    public int findMaxInt(int firstValue, int secondValue, int thirdValue)
     {
-        int maxValue;
+        int intMaxValue;
         if (firstValue > secondValue && firstValue > thirdValue)
         {
-            maxValue = firstValue;
+            intMaxValue = firstValue;
         }
         else if (secondValue > firstValue && secondValue > thirdValue)
         {
-            maxValue = secondValue;
+            intMaxValue = secondValue;
         }
         else
         {
-            maxValue = thirdValue;
+            intMaxValue = thirdValue;
         }
-        Console.WriteLine(maxValue);
-        return maxValue;
-
+        Console.WriteLine(intMaxValue);
+        return intMaxValue;
+    }
+    public float findMaxFloat(float firstValue, float secondValue, float thirdValue)
+    {
+        float floatMaxValue;
+        if (firstValue > secondValue && firstValue > thirdValue)
+        {
+            floatMaxValue = firstValue;
+        }
+        else if (secondValue > firstValue && secondValue > thirdValue)
+        {
+            floatMaxValue = secondValue;
+        }
+        else
+        {
+            floatMaxValue = thirdValue;
+        }
+        Console.WriteLine(floatMaxValue);
+        return floatMaxValue;
     }
 
 }

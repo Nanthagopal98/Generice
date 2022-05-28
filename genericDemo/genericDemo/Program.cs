@@ -12,7 +12,7 @@ using System.Threading.Tasks;
         var log = NLog.LogManager.GetCurrentClassLogger();
         log.Info("Find Maximum started");
         findMaximumValue findMaximumValue = new findMaximumValue();
-        findMaximumValue.findMax(30, 20, 10);
-        
-        }
+        findMaximumValue.findMaxInt(30, 20, 10);
+        findMaximumValue.findMaxFloat(10.5F, 20.5F, 30.5F);
+    }
     }
