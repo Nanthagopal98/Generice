@@ -13,5 +13,6 @@ using System.Threading.Tasks;
         log.Info("Find Maximum started");
         findMaximumValue findMaximumValue = new findMaximumValue();
         findMaximumValue.findMax(30, 20, 10);
+        
         }
     }

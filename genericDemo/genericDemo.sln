@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "genericDemo", "genericDemo\genericDemo.csproj", "{2DA02105-B649-4BE3-B9DF-21CC31B829B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "generic", "genericDemo\generic.csproj", "{2DA02105-B649-4BE3-B9DF-21CC31B829B2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "findMaximum.test", "findMaximum.test\findMaximum.test.csproj", "{20112161-6A05-474C-B66C-E846526DC8AB}"
 EndProject

@@ -12,7 +12,7 @@ public class findMaximumValue
         int maxValue;
         if (firstValue > secondValue && firstValue > thirdValue)
         {
-            maxValue = firstValue;  
+            maxValue = firstValue;
         }
         else if (secondValue > firstValue && secondValue > thirdValue)
         {
@@ -24,8 +24,9 @@ public class findMaximumValue
         }
         Console.WriteLine(maxValue);
         return maxValue;
-        
+
     }
+
 }
 
 

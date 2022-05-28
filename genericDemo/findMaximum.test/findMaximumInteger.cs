@@ -7,7 +7,7 @@ namespace findMaximum.test
         {
             int A = 30, B = 20, C = 10;
             findMaximumValue findMaximumValue = new findMaximumValue();
-            int finalResult = findMaximumValue.findMax(A,B,C);
+            int finalResult = findMaximumValue.findMax(A, B, C);
             Assert.AreEqual(A, finalResult);
         }
         [Test]

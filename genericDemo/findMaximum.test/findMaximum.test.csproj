@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\genericDemo\genericDemo.csproj" />
+    <ProjectReference Include="..\genericDemo\generic.csproj" />
   </ItemGroup>
 
 </Project>
