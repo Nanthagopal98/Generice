@@ -15,8 +15,11 @@ public class findMaximumValue<T>
     public T findMax()
     {
         Array.Sort(input);
-        Console.WriteLine(input[input.Length - 1]);
         return input[input.Length - 1];
+    }
+    public void display()
+    {
+        Console.WriteLine("Maximum value is : "+findMax());
     }
 }
 
