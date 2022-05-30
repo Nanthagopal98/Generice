@@ -5,26 +5,34 @@ namespace findMaximum.test
         [Test]
         public void findMax_MaximumValueAtFirstPosition()
         {
-            int A = 30, B = 20, C = 10;
-            findMaximumValue<int> findMaximumValue = new findMaximumValue<int>(A, B, C);
+            int A = 30, B = 20, C = 10, D = 5;
+            findMaximumValue<int> findMaximumValue = new findMaximumValue<int>(A, B, C, D);
             int finalResult = findMaximumValue.findMax();
             Assert.AreEqual(A, finalResult);
         }
         [Test]
         public void findMax_MaximumValueAtSecondPosition()
         {
-            int A = 10, B = 30, C = 20;
-            findMaximumValue<int> findMaximumValue = new findMaximumValue<int>(A, B, C);
+            int A = 10, B = 30, C = 20, D = 5;
+            findMaximumValue<int> findMaximumValue = new findMaximumValue<int>(A, B, C, D);
             int finalResult = findMaximumValue.findMax();
             Assert.AreEqual(B, finalResult);
         }
         [Test]
         public void findMax_MaximumValueAtThirdPosition()
         {
-            int A = 10, B = 20, C = 30;
-            findMaximumValue<int> findMaximumValue = new findMaximumValue<int>(A, B, C);
+            int A = 10, B = 20, C = 30, D = 5;
+            findMaximumValue<int> findMaximumValue = new findMaximumValue<int>(A, B, C, D);
             int finalResult = findMaximumValue.findMax();
             Assert.AreEqual(C, finalResult);
+        }
+        [Test]
+        public void findMax_MaximumValueAtFourthPosition()
+        {
+            int A = 10, B = 20, C = 30, D = 40;
+            findMaximumValue<int> findMaximumValue = new findMaximumValue<int>(A, B, C, D);
+            int finalResult = findMaximumValue.findMax();
+            Assert.AreEqual(D, finalResult);
         }
     }
     public class TestFloat

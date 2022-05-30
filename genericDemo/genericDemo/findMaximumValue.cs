@@ -5,43 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-public class findMaximumValue<T> where T : IComparable<T>
+public class findMaximumValue<T>
 {
-    T firstValue;
-    T secondValue;
-    T thirdValue;
-    public findMaximumValue(T firstValue, T secondValue, T thirdValue) 
+    public T[] input;
+    public findMaximumValue(params T[] input) 
     {
-        this.firstValue = firstValue;
-        this.secondValue = secondValue;
-        this.thirdValue = thirdValue;
-
+        this.input = input;
     }
-        public T findMax() 
-        {
-            int intMaxValue;
-            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0 ||
-                firstValue.CompareTo(secondValue) >= 0 && firstValue.CompareTo(thirdValue) > 0 ||
-                firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) >= 0)
-            {
-                Console.WriteLine(firstValue);
-                return firstValue;
-            }
-            else if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0 ||
-                    secondValue.CompareTo(firstValue) >= 0 && secondValue.CompareTo(thirdValue) > 0 ||
-                    secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) >= 0)
-            {
-                Console.WriteLine(secondValue);
-                return secondValue;
-            }
-            else
-            {
-                Console.WriteLine(thirdValue);
-                return thirdValue;
-            }
-            return firstValue;
-        }
-    
+    public T findMax()
+    {
+        Array.Sort(input);
+        Console.WriteLine(input[input.Length - 1]);
+        return input[input.Length - 1];
+    }
 }
 
 
